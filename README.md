@@ -22,6 +22,7 @@ At line 542 changed the for loop to a maximum of 24 iterations.
 Those images were resized and/or compressed for bandwidth saving:
 ~/img/profilepic.jpg
 ~/views/images/pizzeria.jpg
+~/views/images/pizzeria-thumb.jpg (Created a thumb image for the main page)
 ~/img/project-2048.jpg (This was originally an external image)
 ~/img/project-mobile.jpg (This was originally an external image)
 ~/img/project-webperf.jpg (This was originally an external image)
