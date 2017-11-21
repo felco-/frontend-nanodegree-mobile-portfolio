@@ -2,8 +2,8 @@
 In order to view this website, download this repository and open index.html in the main directory.
 
 ## Optimization made to ~/index.html
-By Google PageSpeed, we are better loading the CSS into the Head section of the HTML, those style sections were minified. Beyond that the HTML now has a *cache-control* and *expires* Meta in their Head section. The GoogleFont was removed.
-The expiration date is set for 1 year from 11/21/2017.
+By Google PageSpeed, we are better loading the CSS into the Head section of the HTML, those style sections were minified. Beyond that the HTML now has a *cache-control* and *expires* Meta in their Head section. The GoogleFont was removed. The expiration date is set for 1 year from 11/21/2017.
+Also the Google Analytics were moved to the end of the HTML.
 PageSpeed for Mobile is 93/100
 PageSpeed for Desktop is 96/100
 
