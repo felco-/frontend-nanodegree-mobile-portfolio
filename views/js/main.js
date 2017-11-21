@@ -539,7 +539,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var s = 256;
   var elem;
   // Change the for loop to a maximum of 24 Pizzas
-  for (var i = 0; i < 23; i++) {
+  for (var i = 0; i < 24; i++) {
     elem = document.createElement('img');
     elem.className = 'mover';
     elem.src = "images/pizza.png";
