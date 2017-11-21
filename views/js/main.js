@@ -511,11 +511,12 @@ function updatePositions() {
   var items = document.querySelectorAll('.mover');
 
   // document.body.scrollTop is no longer supported in Chrome.
-  // Moved this vars out of the loop
-  var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-  var phase = Math.sin((scrollTop / 1250) + (i % 5));
+  // Moved scrollTop var out of the loop doing the division
+  var scrollTop = (document.documentElement.scrollTop || document.body.scrollTop) / 1250;
 
   for (var i = 0; i < items.length; i++) {
+    // Moved back phase var into the loop with the sum
+    var phase = Math.sin(scrollTop + (i % 5));
     items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
   }
 
@@ -536,8 +537,10 @@ window.addEventListener('scroll', updatePositions);
 document.addEventListener('DOMContentLoaded', function() {
   var cols = 8;
   var s = 256;
-  for (var i = 0; i < 200; i++) {
-    var elem = document.createElement('img');
+  var elem;
+  // Change the for loop to a maximum of 24 Pizzas
+  for (var i = 0; i < 23; i++) {
+    elem = document.createElement('img');
     elem.className = 'mover';
     elem.src = "images/pizza.png";
     elem.style.height = "100px";

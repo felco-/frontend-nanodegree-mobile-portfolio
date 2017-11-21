@@ -15,7 +15,8 @@ PageSpeed for Desktop is 92/100
 ## Optimization made to ~/views/js/main.js
 Two parts of the JavaScript were changed.
 At line 451 the *changePizzaSizes* function were rearranged to use one Pizza size and apply it to all Pizza elements in the page.
-At line 515 the *var* scrollTop and phase were moved out of the for loop.
+At line 515 the *var* scrollTop was changed to perform the division outside the loop and the *var* phase was put back into the loop.
+At line 542 changed the for loop to a maximum of 24 iterations.
 
 ## Others optimizations
 Those images were resized and/or compressed for bandwidth saving:
